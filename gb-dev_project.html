@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/> 
+
+<title>재난안전데이터 공유플랫폼 휴대폰 인증테스트</title>
+
+<script src="sign.js"></script>
+  
+</head>
+
+<body class="memJoinForm">
+	<div id="memJoin">
+		<div class="memJoinWrap">  
+			<div class="memberJoinBox"> 
+				<!-- title -->       
+			    <div class="titleArea">
+					<p>개인인증을 위해 휴대폰인증 테스트 인증을 진행해 주세요.</p>
+				</div>
+				<!-- //title -->
+				<!-- 인증방법선택 -->	
+				<!--
+				<div class="mBox">
+					<div class="memTypeChoice ver">
+						<div>
+							<i class="fa fa-phone circle"></i>
+							<input id="rdo_phone" name="rdo_freeBoardCerti" type="radio" value="B" title="본인안심인증" onclick="fn_certiChange('phone', 'ipin');"><label for="rdo_phone">본인안심(핸드폰) 인증</label>
+						</div>
+					</div>
+				</div>
+				-->
+				<!-- 인증방법선택 -->	
+				<div class="mBox">
+					<div class="memTypeChoice ver">
+						<div>
+							<i class="fa fa-phone circle"></i>
+							<input id="rdo_phone" name="rdo_freeBoardCerti" type="radio" value="B" title="본인안심인증" onclick="fn_certiChange('phone', 'ipin');"><label for="rdo_phone">본인안심(핸드폰) 인증</label>
+						</div>
+					</div>
+				</div>
+				<div class="titleArea">
+					<p>개인정보보호를 위해 본인안심(핸드폰) 인증을 통한 서비스를 시행하고 있습니다.</p>
+					<p>본인안심(핸드폰)인증은 <strong class="blue">본인명의의 핸드폰번호</strong>를 이용하여 주십시요.</p> 
+					<div class="btnArea">
+						<button onclick="window.open('https://cp.mcash.co.kr/mcht/login.jsp' , '본인안심(핸드폰)인증' , 'width=1150,height=850,location=no,status=no,scrollbars=yes');">본인안심(핸드폰)인증</button>
+					</div>
+					</br>
+					<div class="phone">
+						<input id="phone1" type="text" size="1" maxlength="3" oninput="changePhone1()"> -
+						<input id="phone2" type="text" size="3" maxlength="4" oninput="changePhone2()"> -
+						<input id="phone3" type="text" size="3" maxlength="4" oninput="changePhone3()">
+					</div>
+					</br>
+					<div class="auth">
+						<div id="certificationNumber">0000</div>
+							<button disabled id="sendMessage" onclick="getToken()">인증번호 전송</button>
+						</div>
+
+						<div class="timer">
+							<div id="timeLimit">03:00</div>
+								<button disabled id="completion" onclick="checkCompletion()">인증확인</button>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
